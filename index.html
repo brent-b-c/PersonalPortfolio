@@ -7,29 +7,60 @@
     <title>Personal Portfolio Webpage</title>
 </head>
 <body>
-    <header id="about">
+    <header id="navbar" class="nav">
         <nav id="navbar">
             <ul>
-                <li><a href="#Welcome">Welcome</a></li>
+                <li><a href="#Welcome-section">Welcome</a></li>
                 <li><a href="#Projects">Projects</a></li>
                 <li><a href="#about">About</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="Welcome">
-        <h1>Welcome to My Portfolio</h1>
+    <section id="Welcome-section">
+        <h1 id="welcome">Welcome to My Portfolio</h1><hr id="welh1">
         <p>Hello! I am Brent, a student. This is my personal portfolio webpage where you can find information about my projects and background.</p>
     </section>
     <section id="Projects">
         <h2 id="into-header">Here are some of my projects</h2>
 
-        <div class="project-tiles">
-            <a href="https://survey-rosy.vercel.app/">
-                <img src="Survey.png" alt="Survey">
-                <img src="tributepage.png" alt="">
-            </a>
+        <div class="grid">
+            <div class="project-tiles">
+                <a href="https://survey-rosy.vercel.app/">
+                    <img class="project-img" src="Survey.png" alt="Survey">
+                    <p class="project-desc">Survey webpage</p>
+                </a>
+            </div>
+
+            <div class="project-tiles">
+                <a href="https://tribute-page-six-iota.vercel.app">
+                    <img class="project-img" src="tributepage.png" alt="Portfolio">
+                    <p class="project-desc">Tribute Page</p>
+                </a>
+            </div>
+
+            <div class="project-tiles">
+                <a href="https://technical-doc.vercel.app">
+                    <img class="project-img" src="techdoc.png" alt="Portfolio">
+                    <p class="project-desc">Technical Document</p>
+                </a>
+            </div>
+            
+            <div class="project-tiles">
+                <a href="https://product-landing-page-peach-five.vercel.app">
+                    <img class="project-img" src="plp.png" alt="Portfolio">
+                    <p class="project-desc">Product Landing Page</p>
+                </a>
+            </div>
         </div>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a student learning web development. I enjoy creating projects that help me improve my skills and showcase my abilities. Feel free to explore my projects and get in touch!</p>
+        <br>
+        24-5565-164<br>
+        bbc5164@students.uc-bcf.edu.ph
+
     </section>
 
 </body>

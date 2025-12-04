@@ -1,0 +1,187 @@
+* {
+    font-family: 'Noto Sans';
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #F1F3E0;
+}
+
+/* WELCOME SECTION */
+#Welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#welh1, #h2-hr {
+    background-color: #A1BC98;
+    height: 2px;
+    border: none;
+    max-width: 100%;
+    width: 100%;
+}
+
+#h2-hr {
+    max-width: 500px;
+    background-color: #778873;
+}
+
+#welcome {
+    font-size: xxx-large;
+    font-weight: bold;
+    color: #778873;
+}
+
+#Welcome-section p {
+    font-size: larger;
+    color: #778873;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    width: 100%;
+    background-color: #D2DCB6;
+    z-index: 10;
+    padding: 15px 0px;
+    margin-left: 0;
+}
+#nav{
+    width: 100%;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: x-large;
+    font-weight: bold;
+}
+#navbar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #778873;
+}
+
+#navbar a:hover {
+    background-color: #A1BC98;
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+/* PROJECTS SECTION */
+#Projects {
+    background-color: #A1BC98;
+    padding-bottom: 50px;
+}
+
+#into-header {
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F1F3E0;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 5px;
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.project-tiles {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.project-img {
+    height: 300px;
+    max-width: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.project-desc {
+    background-color: #F1F3E0;
+    text-align: center;
+    margin-top: -20px;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    font-weight: bold;
+    font-size: x-large;
+    color: #778873;
+}
+
+/* ABOUT SECTION */
+#about {
+    padding: 30px;
+}
+
+#about p {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+    #Welcome-section p {
+        font-size: 1.5rem;
+    }
+    #welcome {
+        font-size: 2.5rem;
+    }
+    #welh1 {
+        width: 80%;
+    }
+    #navbar ul {
+        font-size: 1.5rem;
+        gap: 15px;
+    }
+    #into-header {
+        font-size: 1.5rem;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    #Welcome-section p {
+        font-size: 1rem;
+    }
+    #welcome {
+        font-size: 1.9rem;
+    }
+    #welh1 {
+        width: 70%;
+    }
+    #navbar ul {
+        font-size: 1rem;
+        gap: 15px;
+    }
+    #into-header {
+        font-size: 0.9rem;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+    #navbar ul {
+        font-size: 0.5rem;
+        gap: 5px;
+    }
+}
